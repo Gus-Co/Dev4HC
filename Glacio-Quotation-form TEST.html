@@ -581,20 +581,21 @@
                     const doc = new jsPDF();
 
                     // Load and add header image
-                    const headerImgSrc = './IMAGES/header.png';
+                    const headerImgSrc = './IMAGES/HC Letterhead 2024-12.png';
                     const headerImg = await loadImage(headerImgSrc);
                     const imgWidth = 215;
                     const imgHeight = 40;
                     doc.addImage(headerImg, 'PNG', 0, 0, imgWidth, imgHeight);
 
                     // Load and add footer image
-                    const footerImgSrc = './IMAGES/footer.png';
+                    const footerImgSrc = './IMAGES/footer HC Letterhead-15.png';
                     const footerImg = await loadImage(footerImgSrc);
                     const footerImgWidth = 210;
                     const footerImgHeight = 40;
                     const footerImgX = 0;
                     const footerImgY = doc.internal.pageSize.height - footerImgHeight;
                     doc.addImage(footerImg, 'PNG', footerImgX, footerImgY, footerImgWidth, footerImgHeight);
+
 
                     // Add text to the PDF
                     doc.setFontSize(11);

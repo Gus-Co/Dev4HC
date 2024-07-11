@@ -407,13 +407,13 @@
                 const { jsPDF } = window.jspdf;
                 const doc = new jsPDF();
 
-                const headerImgSrc = './IMAGES/header.png';
+                const headerImgSrc = '/IMAGES/HC Letterhead 2024-12.png';
                 const headerImg = await loadImage(headerImgSrc);
                 const imgWidth = 215;
                 const imgHeight = 40;
                 doc.addImage(headerImg, 'PNG', 0, 0, imgWidth, imgHeight);
 
-                const footerImgSrc = './IMAGES/footer.png';
+                const footerImgSrc = '/IMAGES/footerHC Letterhead-15.png';
                 const footerImg = await loadImage(footerImgSrc);
                 const footerImgWidth = 210;
                 const footerImgHeight = 40;

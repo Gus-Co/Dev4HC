@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote Tool</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="image/png" href="HC HEAT 1.PNG">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -61,7 +61,7 @@
 <body>
     <div class="Test1 section1">
         <form id="quotationForm">
-            <a class="navbar-brand" href="#"><img src="./IMAGES/HC Letterhead 2024-12.png" alt="Header Image"></a>
+            <a class="navbar-brand" href="#"><img src="/IMAGES/HC Letterhead 2024-12.png" alt="Header Image"></a>
             <div class="form-group">
                 <div class="form-group">
                     <h2>Client Information</h2>
@@ -407,13 +407,13 @@
                 const { jsPDF } = window.jspdf;
                 const doc = new jsPDF();
 
-                const headerImgSrc = '/IMAGES/HC Letterhead 2024-12.png';
+                const headerImgSrc = '/IMAGES/header.png';
                 const headerImg = await loadImage(headerImgSrc);
                 const imgWidth = 215;
                 const imgHeight = 40;
                 doc.addImage(headerImg, 'PNG', 0, 0, imgWidth, imgHeight);
 
-                const footerImgSrc = '/IMAGES/footerHC Letterhead-15.png';
+                const footerImgSrc = '/IMAGES/footer.png';
                 const footerImg = await loadImage(footerImgSrc);
                 const footerImgWidth = 210;
                 const footerImgHeight = 40;
@@ -491,7 +491,7 @@
     </script>
 </body>
 <footer>
-    <img src="./IMAGES/footer HC Letterhead-15.png" alt="Footer Image" width="100%" height="3">
+    <img src="/IMAGES/footer HC Letterhead-15.png" alt="Footer Image" width="100%" height="3">
     <p style="text-align: center;">&copy; 2024 HC HEAT HEAT-EXCHANGERS. All rights reserved.</p>
 </footer>
 
